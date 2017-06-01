@@ -17,13 +17,15 @@ SOURCES += main.cpp \
     bullet.cpp \
     enemy.cpp \
     game.cpp \
-    score.cpp
+    score.cpp \
+    lifes.cpp
 
 HEADERS  += \
     myrect.h \
     bullet.h \
     enemy.h \
     game.h \
-    score.h
+    score.h \
+    lifes.h
 
 FORMS    += mainwindow.ui

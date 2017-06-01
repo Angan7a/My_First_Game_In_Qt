@@ -3,6 +3,10 @@
 #include<QTimer>
 #include<QGraphicsScene>
 #include<stdlib.h>
+#include "game.h"
+
+extern Game * game;
+
 
 Enemy::Enemy()
 {
@@ -22,7 +26,7 @@ void Enemy::move()
     if (pos().y() > 600) {
         scene()->removeItem(this);
         delete this;
-
+           game->lifes->decrase();
     }
 
 }
